@@ -16,37 +16,37 @@ public:
 
     double add()
     {
-        double summ = this->num1 + this->num2;
+        double summ = num1 + num2;
         return summ;
     }
 
     double multiply()
     {
-        double mul = this->num1 * this->num2;
+        double mul = num1 * num2;
         return mul;
     }
 
     double subtract_1_2()
     {
-        double sub2_1 = this->num2 - this->num1;
+        double sub2_1 = num2 - num1;
         return sub2_1;
     }
 
     double subtract_2_1()
     {
-        double sub1_2 = this->num1 - this->num2;
+        double sub1_2 = num1 - num2;
         return sub1_2;
     }
 
     double divide_1_2()
     {
-        double div1_2 = this->num1 / this->num2;
+        double div1_2 = num1 / num2;
         return div1_2;
     }
 
     double divide_2_1()
     {
-        double div2_1 = this->num2 / this->num1;
+        double div2_1 = num2 / num1;
         return div2_1;
     }
 
