@@ -1,4 +1,4 @@
-#include <iostream>
+Ôªø#include <iostream>
 #include <windows.h>
 
 class Counter
@@ -35,61 +35,49 @@ public:
     }
 };
 
+void cycle(Counter ab)
+{
+    char op;
+    do
+    {
+        std::cout << "–í–≤–µ–¥–∏—Ç–µ –∫–æ–º–∞–Ω–¥—É ('+', '-', '=' –∏–ª–∏ 'x'): ";
+        std::cin >> op;
+        if (op == '+')
+        {
+            ab.increase();
+        }
+        if (op == '-')
+        {
+            ab.decrease();
+        }
+        if (op == '=')
+        {
+            ab.view();
+        }
+    } while (op != 'x');
+}
+
 int main()
 {
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
     std::string p;
-    char oper;
 
-    std::cout << "¬˚ ıÓÚËÚÂ ÛÍ‡Á‡Ú¸ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡? ¬‚Â‰ËÚÂ ‰‡ ËÎË ÌÂÚ: ";
+    std::cout << "–í—ã —Ö–æ—Ç–∏—Ç–µ —É–∫–∞–∑–∞—Ç—å –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞? –í–≤–µ–¥–∏—Ç–µ –¥–∞ –∏–ª–∏ –Ω–µ—Ç: ";
     std::cin >> p;
-    if (p == "‰‡" || p == "ƒ¿" || p == "ƒ‡" || p == "‰¿")
+    if (p == "–¥–∞" || p == "–î–ê" || p == "–î–∞" || p == "–¥–ê")
     {
         int number = 0;
-        std::cout << "¬‚Â‰ËÚÂ Ì‡˜‡Î¸ÌÓÂ ÁÌ‡˜ÂÌËÂ Ò˜∏Ú˜ËÍ‡: ";
+        std::cout << "–í–≤–µ–¥–∏—Ç–µ –Ω–∞—á–∞–ª—å–Ω–æ–µ –∑–Ω–∞—á–µ–Ω–∏–µ —Å—á—ë—Ç—á–∏–∫–∞: ";
         std::cin >> number;
         Counter hip(number);
-
-        do
-        {
-            std::cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'x'): ";
-            std::cin >> oper;
-            if (oper == '+')
-            {
-                hip.increase();
-            }
-            if (oper == '-')
-            {
-                hip.decrease();
-            }
-            if (oper == '=')
-            {
-                hip.view();
-            }
-        } while (oper != 'x');
+        cycle(hip);
     }
     else 
     {
         Counter hip1;
-        do
-        {
-            std::cout << "¬‚Â‰ËÚÂ ÍÓÏ‡Ì‰Û ('+', '-', '=' ËÎË 'x'): ";
-            std::cin >> oper;
-            if (oper == '+')
-            {
-                hip1.increase();
-            }
-            if (oper == '-')
-            {
-                hip1.decrease();
-            }
-            if (oper == '=')
-            {
-                hip1.view();
-            }
-        } while (oper != 'x');
+        cycle(hip1);
     }
 }
 
