@@ -27,6 +27,12 @@ public:
     {
         return name;
     }
+    virtual void print_info() 
+    {
+        std::cout << get_name() << ":" << std::endl;
+        (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
+        std::cout << "Количество сторон: " << get_sides_count() << std::endl;;
+    }
 };
 
 class Triangle : public Figure
@@ -82,6 +88,15 @@ public:
     int get_C()
     {
         return C;
+    }
+
+    void print_info() override
+    {
+        std::cout << get_name() << ":" << std::endl;
+        (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
+        std::cout << "Количество сторон: " << get_sides_count() << std::endl;;
+        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << std::endl;
+        std::cout << "Углы: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << std::endl;
     }
 };
 
@@ -221,6 +236,15 @@ public:
     {
         return D;
     }
+
+    void print_info() override
+    {
+        std::cout << get_name() << ":" << std::endl;
+        (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
+        std::cout << "Количество сторон: " << get_sides_count() << std::endl;;
+        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << " d=" << get_d() << std::endl;
+        std::cout << "Углы: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << " D=" << get_D() << std::endl;
+    }
 };
 
 //Прямоугольник
@@ -327,23 +351,6 @@ public:
     }
 };
 
-void print_info(Triangle* triangle)
-{
-    std::cout << triangle->get_name() << ":" << std::endl;
-    (triangle->is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
-    std::cout << "Количество сторон: " << triangle->get_sides_count() << std::endl;;
-    std::cout << "Стороны: a=" << triangle->get_a() << " b=" << triangle->get_b() << " c=" << triangle->get_c() << std::endl;
-    std::cout << "Углы: A=" << triangle->get_A() << " B=" << triangle->get_B() << " C=" << triangle->get_C() << std::endl;
-}
-
-void print_info(Quadrangle* q)
-{
-    std::cout << q->get_name() << ":" << std::endl;
-    (q->is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
-    std::cout << "Количество сторон: " << q->get_sides_count() << std::endl;;
-    std::cout << "Стороны: a=" << q->get_a() << " b=" << q->get_b() << " c=" << q->get_c() << " d=" << q->get_d() << std::endl;
-    std::cout << "Углы: A=" << q->get_A() << " B=" << q->get_B() << " C=" << q->get_C() << " D=" << q->get_D() << std::endl;
-}
 int main()
 {
     SetConsoleCP(1251);
@@ -360,25 +367,27 @@ int main()
     Parallelogram p;
     Rhombus rh;
 
-    std::cout << figure.get_name() << ":" << std::endl;
+    /*std::cout << figure.get_name() << ":" << std::endl;
     (figure.is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
     std::cout << "Количество сторон: " << figure.get_sides_count() << std::endl;;
+    std::cout << std::endl;*/
+    figure.print_info();
     std::cout << std::endl;
-    print_info(&triangle);
+    triangle.print_info();
     std::cout << std::endl;
-    print_info(&rt);
+    rt.print_info();
     std::cout << std::endl;
-    print_info(&it);
+    it.print_info();
     std::cout << std::endl;
-    print_info(&et);
+    et.print_info();
     std::cout << std::endl;
-    print_info(&q);
+    q.print_info();
     std::cout << std::endl;
-    print_info(&r);
+    r.print_info();
     std::cout << std::endl;
-    print_info(&s);
+    s.print_info();
     std::cout << std::endl;
-    print_info(&p);
+    p.print_info();
     std::cout << std::endl;
-    print_info(&rh);
+    rh.print_info();
 }
