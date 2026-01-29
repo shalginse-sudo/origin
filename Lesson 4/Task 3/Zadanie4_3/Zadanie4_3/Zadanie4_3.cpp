@@ -25,7 +25,7 @@ public:
     {
         return name;
     }
-    virtual void print_info() 
+    virtual void pI() 
     {
         std::cout << get_name() << ":" << std::endl;
         (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;
@@ -88,7 +88,7 @@ public:
         return C;
     }
 
-    void print_info() override
+    void pI() override
     {
         std::cout << get_name() << ":" << std::endl;
         (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
@@ -235,7 +235,7 @@ public:
         return D;
     }
 
-    void print_info() override
+    void pI() override
     {
         std::cout << get_name() << ":" << std::endl;
         (is_correct() ? std::cout << "Правильная" : std::cout << "Неправильная") << std::endl;;
@@ -349,6 +349,12 @@ public:
     }
 };
 
+void print_info(Figure* figure)
+{
+    figure->pI();
+    std::cout << std::endl;
+}
+
 int main()
 {
     SetConsoleCP(1251);
@@ -365,23 +371,14 @@ int main()
     Parallelogram p;
     Rhombus rh;
 
-    figure.print_info();
-    std::cout << std::endl;
-    triangle.print_info();
-    std::cout << std::endl;
-    rt.print_info();
-    std::cout << std::endl;
-    it.print_info();
-    std::cout << std::endl;
-    et.print_info();
-    std::cout << std::endl;
-    q.print_info();
-    std::cout << std::endl;
-    r.print_info();
-    std::cout << std::endl;
-    s.print_info();
-    std::cout << std::endl;
-    p.print_info();
-    std::cout << std::endl;
-    rh.print_info();
+    print_info(&figure);
+    print_info(&triangle);
+    print_info(&rt);
+    print_info(&it);
+    print_info(&et);
+    print_info(&q);
+    print_info(&r);
+    print_info(&s);
+    print_info(&p);
+    print_info(&rh);
 }
