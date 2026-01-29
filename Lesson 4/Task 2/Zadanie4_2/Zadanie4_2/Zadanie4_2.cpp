@@ -1,11 +1,11 @@
-#include <iostream>
+п»ї#include <iostream>
 #include <windows.h>
 
 class Figure
 {
 protected:
     int sides_count = 0;
-    std::string name = "Фигура";
+    std::string name = "Р¤РёРіСѓСЂР°";
 
 public:
     Figure()
@@ -28,12 +28,12 @@ public:
 class Triangle : public Figure
 {
 protected:
-    //Длины сторон
+    //Р”Р»РёРЅС‹ СЃС‚РѕСЂРѕРЅ
     int a = 10;
     int b = 20;
     int c = 30;
-
-    //Углы в градусах
+     
+    //РЈРіР»С‹ РІ РіСЂР°РґСѓСЃР°С…
     int A = 50;
     int B = 60;
     int C = 70;
@@ -42,7 +42,7 @@ public:
     Triangle()
     {
         sides_count = 3;
-        name = "Треугольник";
+        name = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
     }
 
     int get_a()
@@ -78,18 +78,18 @@ public:
     void print_info() override
     {
         std::cout << get_name() << ":" << std::endl;
-        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << std::endl;
-        std::cout << "Углы: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << std::endl;
+        std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << std::endl;
+        std::cout << "РЈРіР»С‹: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << std::endl;
     }
 };
 
-//Прямоугольный треугольник
+//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 class RightTriangle : public Triangle
 {
 public:
     RightTriangle()
     {
-        name = "Прямоугольный треугольник";
+        name = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 
         a = 10;
         b = 20;
@@ -101,13 +101,13 @@ public:
     }
 };
 
-//равнобедренный треугольник
+//СЂР°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 class IsoscelesTriangle : public Triangle
 {
 public:
     IsoscelesTriangle()
     {
-        name = "Равнобедренный треугольник";
+        name = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 
         a = 10;
         b = 20;
@@ -119,13 +119,13 @@ public:
     }
 };
 
-//Равносторонний треугольник
+//Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 class EquilateralTriangle : public Triangle
 {
 public:
     EquilateralTriangle()
     {
-        name = "Равносторонний треугольник";
+        name = "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 
         a = 30;
         b = 30;
@@ -140,13 +140,13 @@ public:
 class Quadrangle : public Figure
 {
 protected:
-    //Длины сторон
+    //Р”Р»РёРЅС‹ СЃС‚РѕСЂРѕРЅ
     int a = 10;
     int b = 20;
     int c = 30;
     int d = 40;
 
-    //Углы в градусах
+    //РЈРіР»С‹ РІ РіСЂР°РґСѓСЃР°С…
     int A = 50;
     int B = 60;
     int C = 70;
@@ -156,7 +156,7 @@ public:
     Quadrangle()
     {
         sides_count = 4;
-        name = "Четырехугольник";
+        name = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
     }
 
     int get_a()
@@ -202,18 +202,18 @@ public:
     void print_info() override
     {
         std::cout << get_name() << ":" << std::endl;
-        std::cout << "Стороны: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << " d=" << get_d() << std::endl;
-        std::cout << "Углы: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << " D=" << get_D() << std::endl;
+        std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << get_a() << " b=" << get_b() << " c=" << get_c() << " d=" << get_d() << std::endl;
+        std::cout << "РЈРіР»С‹: A=" << get_A() << " B=" << get_B() << " C=" << get_C() << " D=" << get_D() << std::endl;
     } 
 };
 
-//Прямоугольник
+//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 class Rectangle2 : public Quadrangle
 {
 public:
     Rectangle2()
     {
-        name = "Прямоугольник";
+        name = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє";
 
         a = 10;
         b = 20;
@@ -227,13 +227,13 @@ public:
     }
 };
 
-//Квадрат
+//РљРІР°РґСЂР°С‚
 class Square : public Quadrangle
 {
 public:
     Square()
     {
-        name = "Квадрат";
+        name = "РљРІР°РґСЂР°С‚";
 
         a = 20;
         b = 20;
@@ -247,13 +247,13 @@ public:
     }
 };
 
-//Паралеллограм
+//РџР°СЂР°Р»РµР»Р»РѕРіСЂР°Рј
 class Parallelogram : public Quadrangle
 {
 public:
     Parallelogram()
     {
-        name = "Параллелограм";
+        name = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°Рј";
 
         a = 20;
         b = 30;
@@ -267,13 +267,13 @@ public:
     }
 };
 
-//Ромб
+//Р РѕРјР±
 class Rhombus : public Quadrangle
 {
 public:
     Rhombus()
     {
-        name = "Ромб";
+        name = "Р РѕРјР±";
 
         a = 20;
         b = 20;
@@ -284,8 +284,8 @@ public:
         B = 40;
         C = 30;
         D = 40;
-    }
-};
+    } 
+};  
 
 int main()
 {
@@ -319,4 +319,4 @@ int main()
     p.print_info();
     std::cout << std::endl;
     rh.print_info();
-}
+} 
