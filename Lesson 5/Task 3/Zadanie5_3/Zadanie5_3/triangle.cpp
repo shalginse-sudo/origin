@@ -1,9 +1,9 @@
-#include "triangle.h"
+п»ї#include "triangle.h"
 
 Triangle::Triangle()
 {
     sides_count = 3;
-    name = "Треугольник";
+    name = "РўСЂРµСѓРіРѕР»СЊРЅРёРє";
 }
 
 int Triangle::get_a()

@@ -1,7 +1,7 @@
-#pragma once
+п»ї#pragma once
 #include "quadrangle.h"
 
-// Паралеллограм
+// РџР°СЂР°Р»РµР»Р»РѕРіСЂР°Рј
 class Parallelogram : public Quadrangle
 {
 public:

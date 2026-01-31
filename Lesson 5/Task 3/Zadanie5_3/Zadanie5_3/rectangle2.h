@@ -1,7 +1,7 @@
-#pragma once
+п»ї#pragma once
 #include "quadrangle.h"
 
-//Прямоугольник
+//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє
 class Rectangle2 : public Quadrangle
 {
 public:

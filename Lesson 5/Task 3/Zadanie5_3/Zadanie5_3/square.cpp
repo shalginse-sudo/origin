@@ -1,9 +1,9 @@
-#include "square.h"
+Ôªø#include "square.h"
 
 
 Square::Square()
 {
-    name = " ‚‡‰‡Ú";
+    name = "–ö–≤–∞–¥—Ä–∞—Ç";
 
     a = 20;
     b = 20;
@@ -15,4 +15,3 @@ Square::Square()
     C = 90;
     D = 90;
 }
-

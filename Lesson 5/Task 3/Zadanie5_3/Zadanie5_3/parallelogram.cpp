@@ -1,8 +1,8 @@
-#include "Parallelogram.h"
+п»ї#include "Parallelogram.h"
 
 Parallelogram::Parallelogram()
 {
-    name = "Параллелограм";
+    name = "РџР°СЂР°Р»Р»РµР»РѕРіСЂР°Рј";
 
     a = 20;
     b = 30;

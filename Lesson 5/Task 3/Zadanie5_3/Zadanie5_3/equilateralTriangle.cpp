@@ -1,8 +1,8 @@
-#include"equilateralTriangle.h"
+п»ї#include"equilateralTriangle.h"
 
 EquilateralTriangle::EquilateralTriangle()
 {
-    name = "Равносторонний треугольник";
+    name = "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 
     a = 30;
     b = 30;

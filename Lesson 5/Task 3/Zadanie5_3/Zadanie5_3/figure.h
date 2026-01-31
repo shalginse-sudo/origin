@@ -1,11 +1,11 @@
-#pragma once
+п»ї#pragma once
 #include <string>
 
 class Figure
 {
 protected:
-    int sides_count = 0;
-    std::string name = "Фигура";
+    int sides_count ;
+    std::string name;
 
 public:
     Figure();
@@ -13,3 +13,4 @@ public:
     int get_sides_count();
     std::string get_name();
 };
+

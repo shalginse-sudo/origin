@@ -1,10 +1,10 @@
-#include "quadrangle.h"
+п»ї#include "quadrangle.h"
 
 
 Quadrangle::Quadrangle()
 {
     sides_count = 4;
-    name = "Четырехугольник";
+    name = "Р§РµС‚С‹СЂРµС…СѓРіРѕР»СЊРЅРёРє";
 }
 
 int Quadrangle::get_a()
@@ -46,3 +46,4 @@ int Quadrangle::get_D()
 {
     return D;
 }
+

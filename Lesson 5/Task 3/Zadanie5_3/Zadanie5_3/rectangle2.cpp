@@ -1,8 +1,8 @@
-#include "rectangle2.h"
+п»ї#include "rectangle2.h"
 
 Rectangle2::Rectangle2()
 {
-  name = "Прямоугольник";
+  name = "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє";
 
   a = 10;
   b = 20;

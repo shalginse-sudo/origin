@@ -1,11 +1,6 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <windows.h>
-
-int sum(int a, int b);
-int substr(int a, int b);
-int multiply(int a, int b);
-int divide(int a, int b);
-int pow(int a, int b);
+#include "math.h"
 
 int main()
 {
@@ -16,16 +11,16 @@ int main()
     int b = 0;
     int op = 0;
 
-    std::cout << "Ââåäèòå ïåğâîå ÷èñëî: ";
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ¿ĞµÑ€Ğ²Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
     std::cin >> a;
-    std::cout << "Ââåäèòå âòîğîå ÷èñëî: ";
+    std::cout << "Ğ’Ğ²ĞµĞ´Ğ¸Ñ‚Ğµ Ğ²Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ñ‡Ğ¸ÑĞ»Ğ¾: ";
     std::cin >> b;
-    std::cout << "Âûáåğèòå îïåğàöèş (1 - ñëîæåíèå, 2 âû÷èòàíèå, "
-        "3 - óìíîæåíèå, 4 - äåëåíèå, 5 - âîçâåäåíèå â ñòåïåíü): ";
+    std::cout << "Ğ’Ñ‹Ğ±ĞµÑ€Ğ¸Ñ‚Ğµ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ñ (1 - ÑĞ»Ğ¾Ğ¶ĞµĞ½Ğ¸Ğµ, 2 Ğ²Ñ‹Ñ‡Ğ¸Ñ‚Ğ°Ğ½Ğ¸Ğµ, "
+        "3 - ÑƒĞ¼Ğ½Ğ¾Ğ¶ĞµĞ½Ğ¸Ğµ, 4 - Ğ´ĞµĞ»ĞµĞ½Ğ¸Ğµ, 5 - Ğ²Ğ¾Ğ·Ğ²ĞµĞ´ĞµĞ½Ğ¸Ğµ Ğ² ÑÑ‚ĞµĞ¿ĞµĞ½ÑŒ): ";
     std::cin >> op;
     std::cout << std::endl;
 
-    int res = 0;
+    double res = 0;
     switch (op) {
     case 1:
         res = sum(a, b);
@@ -43,7 +38,7 @@ int main()
         res = pow(a, b);
         break;
     default:
-        std::cout << "Íåèçâåñòíàÿ îïåğàöèÿ";
+        std::cout << "ĞĞµĞ¸Ğ·Ğ²ĞµÑÑ‚Ğ½Ğ°Ñ Ğ¾Ğ¿ĞµÑ€Ğ°Ñ†Ğ¸Ñ";
         return 0;
     }
 

@@ -1,8 +1,8 @@
-#pragma once
+п»ї#pragma once
 #include"triangle.h"
 
 
-//Прямоугольный треугольник
+//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 class RightTriangle : public Triangle
 {
 public:

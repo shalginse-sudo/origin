@@ -1,6 +1,6 @@
-#include "figure.h"
+﻿#include "figure.h"
 
-Figure::Figure()
+Figure::Figure():sides_count(0),name("Фигура")
 {
 }
 

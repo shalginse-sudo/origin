@@ -1,16 +1,16 @@
-#pragma once
+п»ї#pragma once
 #include "figure.h"
 
 class Quadrangle : public Figure
 {
 protected:
-    //Длины сторон
+    //Р”Р»РёРЅС‹ СЃС‚РѕСЂРѕРЅ
     int a = 10;
     int b = 20;
     int c = 30;
     int d = 40;
 
-    //Углы в градусах
+    //РЈРіР»С‹ РІ РіСЂР°РґСѓСЃР°С…
     int A = 50;
     int B = 60;
     int C = 70;

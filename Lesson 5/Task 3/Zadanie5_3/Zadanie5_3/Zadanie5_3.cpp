@@ -1,4 +1,4 @@
-#include <windows.h>
+ï»¿#include <windows.h>
 #include <iostream>
 #include "figure.h"
 #include "triangle.h"
@@ -14,15 +14,15 @@
 void print_info(Triangle* triangle)
 {
     std::cout << triangle->get_name() << ":" << std::endl;
-    std::cout << "Ñòîğîíû: a=" << triangle->get_a() << " b=" << triangle->get_b() << " c=" << triangle->get_c() << std::endl;
-    std::cout << "Óãëû: A=" << triangle->get_A() << " B=" << triangle->get_B() << " C=" << triangle->get_C() << std::endl;
+    std::cout << "Ğ¡Ñ‚Ğ¾Ñ€Ğ¾Ğ½Ñ‹: a=" << triangle->get_a() << " b=" << triangle->get_b() << " c=" << triangle->get_c() << std::endl;
+    std::cout << "Ğ£Ğ³Ğ»Ñ‹: A=" << triangle->get_A() << " B=" << triangle->get_B() << " C=" << triangle->get_C() << std::endl;
 }
 
 void print_info(Quadrangle* q)
 {
     std::cout << q->get_name() << ":" << std::endl;
-    std::cout << "Ñòîğîíû: a=" << q->get_a() << " b=" << q->get_b() << " c=" << q->get_c() << " d=" << q->get_d() << std::endl;
-    std::cout << "Óãëû: A=" << q->get_A() << " B=" << q->get_B() << " C=" << q->get_C() << " D=" << q->get_D() << std::endl;
+    std::cout << "Ğ¡Ñ‚Ğ¾Ñ€Ğ¾Ğ½Ñ‹: a=" << q->get_a() << " b=" << q->get_b() << " c=" << q->get_c() << " d=" << q->get_d() << std::endl;
+    std::cout << "Ğ£Ğ³Ğ»Ñ‹: A=" << q->get_A() << " B=" << q->get_B() << " C=" << q->get_C() << " D=" << q->get_D() << std::endl;
 }
 
 int main()

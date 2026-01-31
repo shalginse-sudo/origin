@@ -1,8 +1,8 @@
-#include "rhombus.h"
+п»ї#include "rhombus.h"
 
 Rhombus::Rhombus()
 {
-    name = "Ромб";
+    name = "Р РѕРјР±";
 
     a = 20;
     b = 20;

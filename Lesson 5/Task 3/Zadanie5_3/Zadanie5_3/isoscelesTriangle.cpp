@@ -1,8 +1,8 @@
-#include"isoscelesTriangle.h"
+п»ї#include"isoscelesTriangle.h"
 
 IsoscelesTriangle::IsoscelesTriangle()
 {
-    name = "Равнобедренный треугольник";
+    name = "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє";
 
     a = 10;
     b = 20;
