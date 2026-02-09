@@ -18,10 +18,10 @@ int main()
     SetConsoleCP(1251);
     SetConsoleOutputCP(1251);
 
-    #if MODE == 0
+#if MODE == 0
     std::cout << "Работаю в режиме тренировки\n";
 
-    #elif MODE == 1 
+#elif MODE == 1 
     int a = 0;
     int b = 0;
     std::cout << "Работаю в боевом режиме\n";
@@ -31,9 +31,8 @@ int main()
     std::cin >> b;
     std::cout << "Результат сложения: " << add(a,b);
 
-    #else 
+#else 
     std::cout << "Неизвестный режим. Завершение работы" << std::endl;
-
-    #endif
+#endif
 }
 
