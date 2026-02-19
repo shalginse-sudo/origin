@@ -1,18 +1,19 @@
-#include "rhombus.h"
+п»ї#include "rhombus.h"
 #include "exception.h"
 
+
 Rhombus::Rhombus(int a_, int b_, int c_, int d_, int A_, int B_, int C_, int D_)
-    : Quadrangle("Ромб", a_, b_, c_, d_, A_, B_, C_, D_)
+    : Quadrangle("Р РѕРјР±", a_, b_, c_, d_, A_, B_, C_, D_)
 {
     if(a != b || b != c || c != d || d != a) {
-        throw Exception("cтороны не равны");
+        throw Exception("cС‚РѕСЂРѕРЅС‹ РЅРµ СЂР°РІРЅС‹");
     }
 
     if(A != C) {
-        throw Exception("углы A и C не равны");
+        throw Exception("СѓРіР»С‹ A Рё C РЅРµ СЂР°РІРЅС‹");
     }
 
     if(B != D) {
-        throw Exception("углы B и D не равны");
+        throw Exception("СѓРіР»С‹ B Рё D РЅРµ СЂР°РІРЅС‹");
     }
 }

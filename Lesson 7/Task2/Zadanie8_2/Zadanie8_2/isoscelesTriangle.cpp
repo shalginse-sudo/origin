@@ -1,13 +1,14 @@
-#include"isoscelesTriangle.h"
+п»ї#include"isoscelesTriangle.h"
 #include "exception.h"
+
 IsoscelesTriangle::IsoscelesTriangle(int a_, int b_, int c_, int A_, int B_, int C_)
-    : Triangle("Равнобедренный треугольник", a_, b_, c_, A_, B_, C_)
+    : Triangle("Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", a_, b_, c_, A_, B_, C_)
 {
     if(a != c) {
-        throw Exception("стороны a и c не равны");
+        throw Exception("СЃС‚РѕСЂРѕРЅС‹ a Рё c РЅРµ СЂР°РІРЅС‹");
     }
 
     if(A != C) {
-        throw Exception("углы A и C не равны");
+        throw Exception("СѓРіР»С‹ A Рё C РЅРµ СЂР°РІРЅС‹");
     }
 }

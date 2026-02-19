@@ -1,11 +1,10 @@
-#pragma once
+п»ї#pragma once
 #include"triangle.h"
 
-//Равносторонний треугольник
+//Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 
 class EquilateralTriangle : public Triangle
 {
 public:
     EquilateralTriangle(int a_, int b_, int c_, int A_, int B_, int C_);
 };
-

@@ -1,7 +1,8 @@
-#pragma once
+п»ї#pragma once
 #include "quadrangle.h"
 
-//Квадрат
+
+//РљРІР°РґСЂР°С‚
 class Square : public Quadrangle
 {
 public:

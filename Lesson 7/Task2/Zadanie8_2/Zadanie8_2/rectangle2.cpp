@@ -1,18 +1,19 @@
-#include "rectangle2.h"
+п»ї#include "rectangle2.h"
 #include "exception.h"
 
+
 Rectangle2::Rectangle2(int a_, int b_, int c_, int d_, int A_, int B_, int C_, int D_)
-    : Quadrangle("Прямоугольник", a_, b_, c_, d_, A_, B_, C_, D_)
+    : Quadrangle("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє", a_, b_, c_, d_, A_, B_, C_, D_)
 {
     if(a != c) {
-        throw Exception("стороны a и c не равны");
+        throw Exception("СЃС‚РѕСЂРѕРЅС‹ a Рё c РЅРµ СЂР°РІРЅС‹");
     }
 
     if(b != d) {
-        throw Exception("стороны b и d не равны");
+        throw Exception("СЃС‚РѕСЂРѕРЅС‹ b Рё d РЅРµ СЂР°РІРЅС‹");
     }
 
     if(A != 90 || B != 90 || C != 90 || D != 90) {
-        throw Exception("один из углов не равен 90");
+        throw Exception("РѕРґРёРЅ РёР· СѓРіР»РѕРІ РЅРµ СЂР°РІРµРЅ 90");
     }
 }

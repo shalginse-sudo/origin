@@ -1,7 +1,8 @@
-#pragma once
+п»ї#pragma once
 #include"triangle.h"
 
-//равнобедренный треугольник
+
+//СЂР°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 class IsoscelesTriangle : public Triangle
 {
 public:

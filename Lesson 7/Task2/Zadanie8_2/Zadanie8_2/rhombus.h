@@ -1,7 +1,8 @@
-#pragma once
+п»ї#pragma once
 #include "quadrangle.h"
 
-//Ромб
+
+//Р РѕРјР±
 class Rhombus : public Quadrangle
 {
 public:

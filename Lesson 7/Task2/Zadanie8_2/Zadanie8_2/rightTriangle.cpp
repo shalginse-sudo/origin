@@ -1,12 +1,13 @@
-#include"rightTriangle.h"
+п»ї#include"rightTriangle.h"
 #include "exception.h"
 
-//Прямоугольный треугольник
+
+//РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє
 
 RightTriangle::RightTriangle(int a_, int b_, int c_, int A_, int B_, int C_)
-    : Triangle("Прямоугольный треугольник", a_, b_, c_, A_, B_, C_)
+    : Triangle("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", a_, b_, c_, A_, B_, C_)
 {
     if(C != 90) {
-        throw Exception("угол C не равен 90");
+        throw Exception("СѓРіРѕР» C РЅРµ СЂР°РІРµРЅ 90");
     }
 }

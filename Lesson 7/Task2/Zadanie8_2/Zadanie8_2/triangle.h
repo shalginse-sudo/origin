@@ -1,15 +1,16 @@
-#pragma once
+п»ї#pragma once
 #include "figure.h"
+
 
 class Triangle : public Figure
 {
-protected:
-    //Длины сторон
+protected: 
+    //Р”Р»РёРЅС‹ СЃС‚РѕСЂРѕРЅ
     int a;
     int b;
     int c;
 
-    //Углы в градусах
+    //РЈРіР»С‹ РІ РіСЂР°РґСѓСЃР°С…
     int A;
     int B;
     int C;

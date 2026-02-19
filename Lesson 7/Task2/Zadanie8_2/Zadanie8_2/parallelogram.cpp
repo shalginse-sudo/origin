@@ -1,22 +1,23 @@
-#include "Parallelogram.h"
+п»ї#include "Parallelogram.h"
 #include "exception.h"
 
+
 Parallelogram::Parallelogram(int a_, int b_, int c_, int d_, int A_, int B_, int C_, int D_)
-    : Quadrangle("Параллелограм", a_, b_, c_, d_, A_, B_, C_, D_)
+    : Quadrangle("РџР°СЂР°Р»Р»РµР»РѕРіСЂР°Рј", a_, b_, c_, d_, A_, B_, C_, D_)
 {
     if(a != c) {
-        throw Exception("стороны a и c не равны");
+        throw Exception("СЃС‚РѕСЂРѕРЅС‹ a Рё c РЅРµ СЂР°РІРЅС‹");
     }
 
     if(b != d) {
-        throw Exception("стороны b и d не равны");
+        throw Exception("СЃС‚РѕСЂРѕРЅС‹ b Рё d РЅРµ СЂР°РІРЅС‹");
     }
 
     if(A != C) {
-        throw Exception("углы A и C не равны");
+        throw Exception("СѓРіР»С‹ A Рё C РЅРµ СЂР°РІРЅС‹");
     }
 
     if(B != D) {
-        throw Exception("углы B и D не равны");
+        throw Exception("СѓРіР»С‹ B Рё D РЅРµ СЂР°РІРЅС‹");
     }
 }
